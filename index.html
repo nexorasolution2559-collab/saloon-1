@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora Beauty Lounge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fffaf7;
+      overflow-x: hidden;
+      color: #3b2f2f;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .glow {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(100px);
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-[#f3e5dc]">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-[#d4a373] text-white flex items-center justify-center text-xl font-bold shadow-lg">
+          V
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold">Velora Beauty Lounge</h1>
+          <p class="text-sm text-[#8a6f63]">Luxury Salon Experience</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-[#7a5c4d]">
+        <a href="#services" class="hover:text-[#d4a373] transition">Services</a>
+        <a href="#gallery" class="hover:text-[#d4a373] transition">Gallery</a>
+        <a href="#pricing" class="hover:text-[#d4a373] transition">Pricing</a>
+        <a href="#testimonials" class="hover:text-[#d4a373] transition">Testimonials</a>
+        <a href="#contact" class="hover:text-[#d4a373] transition">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-flex bg-[#d4a373] hover:bg-[#c08b5c] text-white px-6 py-3 rounded-full font-semibold transition shadow-xl">
+        Book Appointment
+      </a>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden pt-40 pb-24 px-6">
+    <div class="glow bg-pink-200/50 w-96 h-96 top-0 -left-20"></div>
+    <div class="glow bg-yellow-100/50 w-[30rem] h-[30rem] top-20 right-0"></div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full border border-[#f0d7c7] bg-white px-5 py-2 text-sm text-[#d4a373] font-medium mb-8 shadow-md">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Trusted by 1000+ Happy Clients
+        </div>
+
+        <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+          Luxury Beauty &
+          <span class="text-[#d4a373] block">Hair Experience</span>
+        </h2>
+
+        <p class="mt-8 text-lg text-[#7a5c4d] max-w-2xl leading-relaxed">
+          Premium salon services, expert stylists, skincare treatments, bridal makeup, and luxury hair care in one elegant space.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#contact" class="bg-[#d4a373] hover:bg-[#c08b5c] text-white px-8 py-4 rounded-full font-semibold shadow-xl transition hover:-translate-y-1">
+            Book Appointment
+          </a>
+          <a href="#services" class="border border-[#e7d5c8] bg-white px-8 py-4 rounded-full font-semibold text-[#7a5c4d] hover:border-[#d4a373] hover:text-[#d4a373] transition">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+          <div class="glass rounded-3xl p-5 text-center shadow-lg">
+            <h4 class="text-3xl font-bold text-[#d4a373]">1000+</h4>
+            <p class="text-[#8a6f63] mt-2 text-sm">Happy Clients</p>
+          </div>
+
+          <div class="glass rounded-3xl p-5 text-center shadow-lg">
+            <h4 class="text-3xl font-bold text-[#d4a373]">15+</h4>
+            <p class="text-[#8a6f63] mt-2 text-sm">Beauty Experts</p>
+          </div>
+
+          <div class="glass rounded-3xl p-5 text-center shadow-lg">
+            <h4 class="text-3xl font-bold text-[#d4a373]">Premium</h4>
+            <p class="text-[#8a6f63] mt-2 text-sm">Products</p>
+          </div>
+
+          <div class="glass rounded-3xl p-5 text-center shadow-lg">
+            <h4 class="text-3xl font-bold text-[#d4a373]">Bridal</h4>
+            <p class="text-[#8a6f63] mt-2 text-sm">Specialists</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-6 top-6 w-full h-full rounded-[2rem] bg-[#f8e8dc]"></div>
+
+        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border border-[#f0d7c7]">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop" class="w-full h-[650px] object-cover" alt="Salon" />
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+```
